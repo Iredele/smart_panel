@@ -16,4 +16,6 @@ typedef struct
 } relay;
 
 void init_relays(void);
+static void save_relay_state(int relay_index);
 void relay_set_state(int relay_index, relay_state state);
+relay_state relay_get_state(int relay_index);
